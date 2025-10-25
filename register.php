@@ -55,14 +55,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'sadeqai489@gmail.com';
-                $mail->Password = 'jbtzmhvmizshxaop';
+                $mail->Username = '___Email de l'entreprise___';
+                $mail->Password = 'Password de l'email';
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
                 $mail->Timeout = 10;
                 $mail->CharSet = 'UTF-8';
 
-                $mail->setFrom('sadeqai489@gmail.com', 'Hanisoft');
+                $mail->setFrom('___Email de l'entreprise___', 'Hanisoft');
                 $mail->addAddress($email, $name);
 
                 $mail->isHTML(true);
