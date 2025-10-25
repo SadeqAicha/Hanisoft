@@ -1,0 +1,212 @@
+body{
+    background-color: var(--light-bg);
+}
+*{
+    text-decoration: none !important;
+    transition: 0.1s;
+}
+.search-bar {
+    background: white;
+    border-radius: 50px;
+    padding: 15px 25px;
+    margin: 30px auto !important;
+    margin-top: 70px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: transparent;
+}
+
+.search-bar button {
+    background: var(--secondary-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    transform: scale(1.05);
+}
+/*Start Content*/
+.content {
+    color: #eee;
+    margin: 40px;
+}
+/*Start Posts Bar*/
+.content .post{
+    background: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+.content .post *{
+    color: var(--primary-color) ;
+}
+.post .post-image{
+    width: 100%;
+    border: solid 1px #3498db53;
+}
+.post .post-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+.post .post-title{
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.post .post-details .post-info *{
+    color: rgba(0, 0, 0, 0.478) !important;
+}
+.post .post-details .post-info span{
+    margin-left: 10px;
+
+}
+.post .post-details .post-info span i{
+    margin-right: 5px;
+}
+.post .post-details button.btn-custom{
+    background: transparent;
+    border-radius: 0;
+    font-size: 16px !important;
+    border: solid 1px var(--secondary-color);
+    width: 130px;
+    margin: 5px 0;
+}
+.post .post-details button.btn-custom:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color) !important;
+}
+p.read_mode_text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+p.read_mode_text.expanded{
+    -webkit-line-clamp: unset;
+}
+/*End Posts Bar*/
+
+/*Start Side Bar*/
+/*Start Categories*/
+
+.categories{
+    background: linear-gradient(135deg, #3498db , #072c45);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.categories h4{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.categories ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.categories ul li{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.categories ul li a{
+    color: inherit !important;
+    cursor: pointer;
+}
+.categories ul li:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color) ;
+}
+/*End Categories*/
+
+/*Start Latest Posts*/
+.last-posts{
+    background: linear-gradient(135deg, #3498db , #072c45);
+    border-radius: 20px;
+    padding: 20px;
+}
+.last-posts h4{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.last-posts ul {
+    list-style: none;
+    padding: 0;
+}
+.last-posts ul li{
+    padding: 10px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid var(--secondary-color);
+    cursor: pointer !important;
+}
+.last-posts ul li:last-child{
+    border-bottom: none;
+}
+.last-posts ul li a{
+    color: #eee;
+    display: flex;
+}
+.last-posts ul li img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+/*End Latest Posts*/
+/*End Side Bar*/
+/*End Content*/
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(20, 46, 64, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .search-bar {
+    margin-top: 15% !important;
+    }
+}

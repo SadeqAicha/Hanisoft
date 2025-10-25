@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(46, 101, 179);
+  margin-top: 16vh !important;
+}
+form * {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.card {
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 6%;
+}
+.form-control {
+  background-color: #2a2a3d;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+}
+.form-control:focus {
+  background-color: #2a2a3d;
+  box-shadow: 0 0 0 0.25rem rgba(100, 149, 237, 0.25);
+}
+.btn-primary {
+  background-color: #4b6cb7;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #3a54a3;
+}
+.alert {
+  border-radius: 8px;
+}
+a {
+  color: #4b6cb7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
