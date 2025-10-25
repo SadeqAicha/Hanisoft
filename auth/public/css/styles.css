@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-size: clamp(0.9rem, 0.95vw, 1.2rem) !important;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(120deg, #0b1020, #0f172a);
+  color: #e5e7eb !important;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.auth-header {
+  width: 100% !important;
+  max-width: 600px !important;
+  background: rgba(17,24,39,0.7);
+  backdrop-filter: blur(6px);
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.auth-header h1 { margin: 20px 0 !important; font-size: 24px; }
+.auth-header label { display: block; margin: 10px 0 6px; color: #94a3b8;}
+.auth-header input {
+  width: 100%; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04); color: #e5e7eb;
+  outline: none;
+}
+.auth-header input:focus { border-color: rgba(29, 121, 207, 0.6); }
+.auth-header button {
+  width: 100%; padding: 12px 14px; border-radius: 12px; margin-top: 16px;
+  border: 0; background: var(--secondary-color); color: #07110a; font-weight: 700; cursor: pointer;
+}
+.auth-header a { color: var(--secondary-color); text-decoration: none; }
+.auth-header .error { background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.35); color: #fecaca; padding: 10px; border-radius: 12px; margin-bottom: 12px;}
+.auth-header .success { background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.35); color: #bbf7d0; padding: 10px; border-radius: 12px; margin-bottom: 12px;}
+.auth-header .nav { text-align: center; margin-top: 10px;color: #94a3b8; }
+.header { display:flex; justify-content: space-between; align-items:center;}
+.auth-header .badge {margin: 20px 0; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.08); color: #94a3b8; }
+button {
+  word-break:keep-all !important;
+  white-space: nowrap;
+}
+.role-admin { color: rgb(23, 185, 23); font-weight: 700; }
+.role-user { color: var(--secondary-color); font-weight: 700; }
