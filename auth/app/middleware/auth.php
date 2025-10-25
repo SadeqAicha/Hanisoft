@@ -21,6 +21,6 @@ function require_admin() {
     $u = current_user();
     if (!$u || $u['role'] !== 'admin') {
         http_response_code(403);
-        die('غير مسموح: هذه الصفحة للمدير فقط.');
+        die('Non autorisé : cette page est réservée aux administrateurs uniquement.');
     }
 }
