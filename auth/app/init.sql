@@ -1,4 +1,3 @@
--- أنشئ قاعدة البيانات يدوياً أو نفّذ الأسطر التالية مع تعديل الاسم
 -- CREATE DATABASE `DB_NAME_PLACEHOLDER` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- USE `DB_NAME_PLACEHOLDER`;
 
@@ -11,6 +10,5 @@ CREATE TABLE IF NOT EXISTS users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- مستخدم مدير اختياري (عدّل البريد وكلمة المرور قبل الإدراج)
 -- INSERT INTO users (name, email, password_hash, role) VALUES
 -- ('Admin', 'admin@example.com', '$2y$10$REPLACE_WITH_password_hash', 'admin');
